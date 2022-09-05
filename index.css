@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav button {
+    margin: 0 1rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #d7d7d7;
+}
+
+
+
+.animation-wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 25px;
+}
+
+.paused {
+    -webkit-animation-play-state:paused; /* Safari and Chrome */
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state:paused;
+  }
